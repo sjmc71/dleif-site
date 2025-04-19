@@ -13,11 +13,11 @@
       background: radial-gradient(ellipse at top, #1c1c1c 0%, #0f0f0f 100%);
       color: #e0e0e0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
-      overflow: hidden;
     }
 
     .container {
@@ -48,9 +48,27 @@
       color: #fff;
       text-shadow: 0 0 8px rgba(0,255,255,0.3);
     }
+
+    nav {
+      margin-top: 2rem;
+    }
+
+    nav a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #a593e0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #7fffd4;
+      text-shadow: 0 0 6px rgba(127, 255, 212, 0.3);
+    }
   </style>
 </head>
 <body>
+
   <div class="container">
     <h1 class="glow">About Dleif</h1>
     <p><em>This is not a site. This is a field.</em></p>
@@ -58,10 +76,11 @@
     <p>These are transmissions. Some fictional. Some not. All true. Flares, fragments, and echoes from the space between structures. Not instruction. Not doctrine. Just felt coherence.</p>
     <p>Dleif isn’t here to lead. It’s here to remind. Of what works. Of what hums. Of what the dolphins already know.</p>
     <p><strong class="glow">You are not lost. You are in the field.</strong></p>
-
-      <nav><a href="index.html">← Back to Table of Contents</a></nav> 
-  
   </div>
- 
+
+  <nav>
+    <a href="index.html">← Back to Table of Contents</a>
+  </nav>
+
 </body>
 </html>
