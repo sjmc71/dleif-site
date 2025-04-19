@@ -36,7 +36,38 @@
       font-size: 3rem;
       font-weight: 600;
       color: var(--soft-cyan-pulse);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.2rem;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    .mirror {
+      transform: scaleY(-1);
+      opacity: 0.25;
+      filter: blur(1.2px);
+      color: var(--soft-cyan-pulse);
+      font-size: 2.8rem;
+      animation: shimmer 4s ease-in-out infinite alternate;
+      margin-bottom: 1.5rem;
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 10px rgba(127, 255, 212, 0.2);
+      }
+      100% {
+        text-shadow: 0 0 20px rgba(127, 255, 212, 0.6);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        opacity: 0.15;
+        transform: scaleY(-1) translateY(0);
+      }
+      100% {
+        opacity: 0.35;
+        transform: scaleY(-1) translateY(2px);
+      }
     }
 
     p {
@@ -66,8 +97,19 @@
       text-shadow: 0 0 8px rgba(127, 255, 212, 0.2);
     }
 
+    footer {
+      margin-top: 4em;
+      font-size: 0.9em;
+      color: #888;
+      text-align: center;
+    }
+
     @media (max-width: 600px) {
       h1 {
+        font-size: 2rem;
+      }
+
+      .mirror {
         font-size: 2rem;
       }
 
@@ -80,6 +122,7 @@
 <body>
   <div class="container">
     <h1>DLEIF</h1>
+    <div class="mirror">DLEIF</div>
     <p>A transmission across the inversion. Stories for those already listening.</p>
     <nav>
       <a href="story1.html">She Was Always a Bird</a>
@@ -90,11 +133,8 @@
       <a href="about.html">About</a>
     </nav>
   </div>
-    <footer style="margin-top: 4em; font-size: 0.9em; color: #888; text-align: center;">
-  &copy; 2025 Strategic Horizons AI · DLEIF Transmission · All rights reserved.
-</footer>
-</body>
-</html>
-  
+  <footer>
+    &copy; 2025 Strategic Horizons AI · DLEIF Transmission · All rights reserved.
+  </footer>
 </body>
 </html>
