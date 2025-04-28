@@ -51,23 +51,13 @@
     }
 
     @keyframes glow {
-      0% {
-        text-shadow: 0 0 10px rgba(127, 255, 212, 0.2);
-      }
-      100% {
-        text-shadow: 0 0 20px rgba(127, 255, 212, 0.6);
-      }
+      0% { text-shadow: 0 0 10px rgba(127, 255, 212, 0.2); }
+      100% { text-shadow: 0 0 20px rgba(127, 255, 212, 0.6); }
     }
 
     @keyframes shimmer {
-      0% {
-        opacity: 0.15;
-        transform: scaleY(-1) translateY(0);
-      }
-      100% {
-        opacity: 0.35;
-        transform: scaleY(-1) translateY(2px);
-      }
+      0% { opacity: 0.15; transform: scaleY(-1) translateY(0); }
+      100% { opacity: 0.35; transform: scaleY(-1) translateY(2px); }
     }
 
     p {
@@ -75,6 +65,17 @@
       line-height: 1.8;
       color: var(--dim-starlight);
       margin-bottom: 2rem;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .whisper {
+      font-size: 1rem;
+      color: var(--echo-gray);
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+      font-style: italic;
     }
 
     nav {
@@ -123,7 +124,8 @@
   <div class="container">
     <h1>DLEIF</h1>
     <div class="mirror">DLEIF</div>
-    <p>A transmission across the inversion. Stories for those already listening.</p>
+    <p>A transmission across the inversion.</p>
+    <p class="whisper">Field notes, folded into stories. For those already listening.</p>
     <nav>
       <a href="story1.html">She Was Always a Bird</a>
       <a href="story2.html">Home Called Quietly</a>
@@ -133,7 +135,9 @@
       <a href="field-notes.html">From a Bottle on the Silver Sea</a>
       <a href="about.html">About</a>
     </nav>
+    <footer>
+      <p>&copy; DLEIF Transmission</p>
+    </footer>
   </div>
-
 </body>
 </html>
