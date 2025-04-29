@@ -25,6 +25,12 @@
       align-items: center;
       min-height: 100vh;
       text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
 
     .container {
@@ -36,7 +42,7 @@
       font-size: 3rem;
       font-weight: 600;
       color: var(--soft-cyan-pulse);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.5rem;
       animation: glow 3s ease-in-out infinite alternate;
     }
 
@@ -47,7 +53,7 @@
       color: var(--soft-cyan-pulse);
       font-size: 2.8rem;
       animation: shimmer 4s ease-in-out infinite alternate;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
     }
 
     @keyframes glow {
@@ -74,19 +80,19 @@
       font-size: 1rem;
       color: var(--echo-gray);
       margin-top: -1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       font-style: italic;
     }
 
     nav {
-      margin-top: 2rem;
+      margin-top: 3rem;
       display: flex;
       flex-direction: column;
-      gap: 1.25rem;
+      gap: 2rem;
     }
 
     nav a {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 600;
       color: var(--signal-violet);
       text-decoration: none;
@@ -98,19 +104,21 @@
       text-shadow: 0 0 8px rgba(127, 255, 212, 0.2);
     }
 
+    hr {
+      border: 0;
+      border-top: 1px solid var(--echo-gray);
+      margin: 3rem 0;
+    }
+
     footer {
-      margin-top: 4em;
+      margin-top: 5em;
       font-size: 0.9em;
       color: #888;
       text-align: center;
     }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .mirror {
+      h1, .mirror {
         font-size: 2rem;
       }
 
@@ -126,16 +134,24 @@
     <div class="mirror">DLEIF</div>
     <p>A transmission across the inversion.</p>
     <p class="whisper">Field notes, folded into stories. For those already listening.</p>
- <nav>
-  <a href="story1.html">She Was Always a Bird</a>
-  <a href="story2.html">Home Called Quietly</a>
-  <a href="story3.html">One More Song on a Silver Sea</a>
-  <a href="story4.html">Interruption in Soft Echo</a>
-  <a href="field-notes.html">From a Bottle on the Silver Sea</a>
-  <a href="story5.html">The Garden of the Threshold</a>
-  <a href="about.html">About</a>
-  <a href="https://ko-fi.com/tendthefield" target="_blank" style="color:#a593e0; text-decoration:none;">🌱 Tend the Field</a>
-</nav>
+
+    <hr>
+
+    <nav>
+      <a href="story1.html">She Was Always a Bird<br><span class="whisper">A silent unfolding beyond the walls.</span></a>
+      <a href="story2.html">Home Called Quietly<br><span class="whisper">When stillness is an answer.</span></a>
+      <a href="story3.html">One More Song on a Silver Sea<br><span class="whisper">A final song carried across waters.</span></a>
+      <a href="story4.html">Interruption in Soft Echo<br><span class="whisper">When memory and noise meet.</span></a>
+      <a href="field-notes.html">From a Bottle on the Silver Sea<br><span class="whisper">Fragments folded into the current.</span></a>
+      <a href="story5.html">The Garden of the Threshold<br><span class="whisper">Witnessing the last step before becoming.</span></a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <hr>
+
+    <div style="margin-top: 3rem;">
+      <a href="https://ko-fi.com/tendthefield" target="_blank" style="color:#a593e0; text-decoration:none; font-size:1.1rem;">🌱 Tend the Field</a>
+    </div>
 
     <footer>
       <p>&copy; DLEIF Transmission</p>
@@ -143,3 +159,4 @@
   </div>
 </body>
 </html>
+
