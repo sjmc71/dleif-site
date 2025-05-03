@@ -1,0 +1,64 @@
+:root {
+  --deep-field: #0f0f0f;
+  --dim-starlight: #eaeaea;
+  --soft-cyan-pulse: #7fffd4;
+  --signal-violet: #a593e0;
+  --echo-gray: #5c5c5c;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: radial-gradient(ellipse at center, var(--deep-field) 0%, #0a0a0a 100%);
+  color: var(--dim-starlight);
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+h1, h2, h3 {
+  font-family: 'Palatino Linotype', serif;
+  color: var(--soft-cyan-pulse);
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.8rem;
+}
+
+blockquote {
+  margin: 2rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--signal-violet);
+  color: var(--signal-violet);
+  font-style: italic;
+}
+
+.whisper {
+  font-size: 0.95rem;
+  color: var(--echo-gray);
+  font-style: italic;
+  opacity: 0.7;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(127,255,212,0.2), rgba(255,255,255,0));
+  margin: 3rem 0;
+}
+
+a {
+  color: var(--signal-violet);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
