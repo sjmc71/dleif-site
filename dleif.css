@@ -39,13 +39,14 @@ blockquote {
 }
 
 .whisper {
-  font-size: 0.95rem;
-  color: var(--echo-gray);
+  font-size: 1rem;
+  color: var(--dim-starlight);
   font-style: italic;
-  opacity: 0.7;
+  opacity: 0.85;
   margin-top: 3rem;
   text-align: center;
 }
+
 
 hr {
   border: none;
