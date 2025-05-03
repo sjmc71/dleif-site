@@ -11,7 +11,7 @@ body {
   background: radial-gradient(ellipse at center, var(--deep-field) 0%, #0a0a0a 100%);
   color: var(--dim-starlight);
   line-height: 1.7;
-  max-width: 750px;
+  max-width: 65ch;
   margin: 4rem auto;
   padding: 2rem;
   text-align: left;
@@ -61,4 +61,17 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px dotted var(--soft-cyan-pulse);
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  body {
+    margin: 2rem 1rem;
+    padding: 1rem;
+  }
 }
