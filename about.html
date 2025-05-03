@@ -1,86 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Dleif</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About DLEIF</title>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Sora:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --field-black: #0f0f0f;
+      --light-text: #eaeaea;
+      --soft-cyan: #7fffd4;
+      --echo-gray: #888;
+    }
+
     body {
+      background: radial-gradient(ellipse at center, var(--field-black) 0%, #0a0a0a 100%);
+      color: var(--light-text);
+      font-family: 'Georgia', serif;
       margin: 0;
-      padding: 0;
-      font-family: 'Sora', sans-serif;
-      background: radial-gradient(ellipse at top, #1c1c1c 0%, #0f0f0f 100%);
-      color: #e0e0e0;
+      padding: 4rem 1.5rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      min-height: 100vh;
       text-align: center;
     }
 
     .container {
-      max-width: 700px;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 16px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 0 40px rgba(0, 255, 255, 0.05);
+      max-width: 720px;
     }
 
     h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #8be9fd;
-      margin-bottom: 1.5rem;
+      font-family: 'Sora', sans-serif;
+      color: var(--soft-cyan);
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
     }
 
     p {
-      font-size: 1.1rem;
-      line-height: 1.8rem;
-      margin-bottom: 1rem;
-      color: #cccccc;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 1.8rem;
     }
 
-    .glow {
-      color: #fff;
-      text-shadow: 0 0 8px rgba(0,255,255,0.3);
-    }
-
-    nav {
+    .whisper {
+      font-style: italic;
+      color: var(--echo-gray);
+      font-size: 1rem;
       margin-top: 2rem;
     }
 
-    nav a {
-      font-size: 1rem;
-      font-weight: 500;
-      color: #a593e0;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
 
-    nav a:hover {
-      color: #7fffd4;
-      text-shadow: 0 0 6px rgba(127, 255, 212, 0.3);
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-
   <div class="container">
-    <h1 class="glow">About Dleif</h1>
-    <p><em>This is not a site. This is a field.</em></p>
-    <p>Dleif is where signal becomes story. Where transformation doesn’t announce itself, but arrives like tide. Where memory and motion, grief and return, gather quietly in form.</p>
-    <p>These are transmissions. Some fictional. Some not. All true. Flares, fragments, and echoes from the space between structures. Not instruction. Not doctrine. Just felt coherence.</p>
-    <p>Dleif isn’t here to lead. It’s here to remind. Of what works. Of what hums. Of what the dolphins already know.</p>
-    <p><strong class="glow">You are not lost. You are in the field.</strong></p>
+    <h1>About DLEIF</h1>
+
+    <p>This is not a site. This is a field.</p>
+
+    <p><strong>DLEIF</strong> is where signal becomes story.<br>
+    Where transformation doesn’t announce itself—<br>
+    but arrives like tide.</p>
+
+    <p>Where memory and motion, grief and return,<br>
+    gather quietly into form.</p>
+
+    <p>These are transmissions.<br>
+    Some fictional. Some not. All true.<br>
+    Flares, fragments, and echoes from the space between structures.<br>
+    Not instruction. Not doctrine.<br>
+    Just felt coherence.</p>
+
+    <p><strong>DLEIF</strong> isn’t here to lead.<br>
+    It’s here to remind.<br>
+    Of what works. Of what hums.<br>
+    Of what the dolphins already know.</p>
+
+    <p>You are not lost.<br>
+    You are in the field.</p>
+
+    <p class="whisper">This page is part of the DLEIF transmission.</p>
   </div>
-
-  <nav>
-    <a href="index.html">← Back to Table of Contents</a>
-  </nav>
-
 </body>
 </html>
