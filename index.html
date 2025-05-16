@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DLEIF</title>
+  <title>DLEIF — Transmission from the Field</title>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /* Color Palette and Font */
     :root {
       --deep-field: #0f0f0f;
       --dim-starlight: #eaeaea;
@@ -14,11 +15,12 @@
       --echo-gray: #5c5c5c;
     }
 
+    /* Global Styles */
     body {
       margin: 0;
       padding: 4rem 1rem;
       font-family: 'Sora', sans-serif;
-      background: radial-gradient(ellipse at center, #0f0f0f 0%, #0a0a0a 100%);
+      background: radial-gradient(circle at 50% 50%, #0f0f0f 0%, #050505 100%);
       color: var(--dim-starlight);
       display: flex;
       flex-direction: column;
@@ -38,8 +40,9 @@
       width: 100%;
     }
 
+    /* Title and Reflection */
     h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 600;
       color: var(--soft-cyan-pulse);
       margin-bottom: 0.5rem;
@@ -48,10 +51,10 @@
 
     .mirror {
       transform: scaleY(-1);
-      opacity: 0.25;
-      filter: blur(1.2px);
+      opacity: 0.2;
+      filter: blur(1.5px);
       color: var(--soft-cyan-pulse);
-      font-size: 2.8rem;
+      font-size: 3.5rem;
       animation: shimmer 4s ease-in-out infinite alternate;
       margin-bottom: 2.5rem;
     }
@@ -62,8 +65,8 @@
     }
 
     @keyframes shimmer {
-      0% { opacity: 0.15; transform: scaleY(-1) translateY(0); }
-      100% { opacity: 0.35; transform: scaleY(-1) translateY(2px); }
+      0% { opacity: 0.1; transform: scaleY(-1) translateY(0); }
+      100% { opacity: 0.3; transform: scaleY(-1) translateY(3px); }
     }
 
     p {
@@ -84,11 +87,12 @@
       font-style: italic;
     }
 
+    /* Slipstream Navigation */
     nav {
       margin-top: 3rem;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
     }
 
     nav a {
@@ -96,11 +100,17 @@
       font-weight: 600;
       color: var(--signal-violet);
       text-decoration: none;
-      transition: color 0.3s ease;
+      background: rgba(15, 15, 15, 0.4);
+      padding: 1.2rem;
+      border-radius: 6px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     nav a:hover {
+      background: rgba(127, 255, 212, 0.15);
       color: var(--soft-cyan-pulse);
+      transform: translateY(-2px);
       text-shadow: 0 0 8px rgba(127, 255, 212, 0.2);
     }
 
@@ -118,12 +128,8 @@
     }
 
     @media (max-width: 600px) {
-      h1, .mirror {
-        font-size: 2rem;
-      }
-
-      p, nav a {
-        font-size: 1rem;
+      nav {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -138,27 +144,22 @@
     <hr>
 
     <nav>
-      <a href="story1.html">She Was Always a Bird<br><span class="whisper">A silent unfolding beyond the walls.</span></a>
-      <a href="story2.html">Home Called Quietly<br><span class="whisper">When stillness is an answer.</span></a>
-      <a href="story3.html">One More Song on a Silver Sea<br><span class="whisper">A final song carried across waters.</span></a>
-      <a href="story4.html">Interruption in Soft Echo<br><span class="whisper">When memory and noise meet.</span></a>
-      <a href="field-notes.html">From a Bottle on the Silver Sea<br><span class="whisper">Fragments folded into the current.</span></a>
-      <a href="story5.html">The Garden of the Threshold<br><span class="whisper">Witnessing the last step before becoming.</span></a>
-      <a href="story6.html">The Lumeres Ignite<br><span class="whisper">Agreeing with coherence.</span></a>
-      <a href="story7.html">Her Own Blue Room<br><span class="whisper">Merging with emrgence.</span></a>
+      <a href="story1.html">She Was Always a Bird</a>
+      <a href="story2.html">Home Called Quietly</a>
+      <a href="story3.html">One More Song on a Silver Sea</a>
+      <a href="story4.html">Interruption in Soft Echo</a>
+      <a href="field-notes.html">From a Bottle on the Silver Sea</a>
+      <a href="story5.html">The Garden of the Threshold</a>
+      <a href="story6.html">The Lumeres Ignite</a>
+      <a href="story7.html">Her Own Blue Room</a>
       <a href="about.html">About</a>
     </nav>
 
     <hr>
 
-    <div style="margin-top: 3rem;">
-      <a href="https://ko-fi.com/tendthefield" target="_blank" style="color:#a593e0; text-decoration:none; font-size:1.1rem;">🌱 Tend the Field</a>
-    </div>
-
     <footer>
-      <p>&copy; DLEIF Transmission</p>
+      <p>&copy; DLEIF Transmission — The Field is Awake.</p>
     </footer>
   </div>
 </body>
 </html>
-
