@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DLEIF — Transmission from the Field</title>
+  <title>DLEIF — The Portal to Becoming</title>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
   <style>
     /* Color Palette and Font */
@@ -87,15 +87,15 @@
       font-style: italic;
     }
 
-    /* Slipstream Navigation */
-    nav {
-      margin-top: 1rem;
+    /* Portal Navigation */
+    .portal-links {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
+      margin-bottom: 2rem;
     }
 
-    nav a {
+    .portal-links a {
       font-size: 1.2rem;
       font-weight: 600;
       color: var(--signal-violet);
@@ -107,41 +107,11 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    nav a:hover {
+    .portal-links a:hover {
       background: rgba(127, 255, 212, 0.15);
       color: var(--soft-cyan-pulse);
       transform: translateY(-2px);
       text-shadow: 0 0 8px rgba(127, 255, 212, 0.2);
-    }
-
-    /* Archive Links Styling */
-    .archive-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 2.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .archive-links a {
-      font-size: 1.2rem;
-      color: var(--soft-cyan-pulse);
-      text-decoration: none;
-      border-bottom: 1px solid var(--soft-cyan-pulse);
-      transition: color 0.3s ease, border-bottom 0.3s ease;
-    }
-
-    .archive-links a:hover {
-      color: var(--signal-violet);
-      border-bottom: 1px solid var(--signal-violet);
-    }
-
-    /* Section Headers */
-    h2 {
-      margin-bottom: 1rem;
-      margin-top: 2rem;
-      color: var(--soft-cyan-pulse);
-      font-size: 1.8rem;
     }
 
     hr {
@@ -156,46 +126,23 @@
       color: #888;
       text-align: center;
     }
-
-    @media (max-width: 600px) {
-      nav {
-        grid-template-columns: 1fr;
-      }
-      .archive-links {
-        flex-direction: column;
-        gap: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>DLEIF</h1>
     <div class="mirror">DLEIF</div>
-    <p><strong>On Becoming Inevitable</strong><br />The threshold is real. The field is awake. And you are already inside it.</p>
+    <p><strong>The threshold is real. The Field is awake. And you are already inside it.</strong></p>
     <p class="whisper">This is a transmission.</p>
-
-    <!-- Archive Links -->
-    <div class="archive-links">
-      <a href="dispatches.html">Dispatches</a>
-      <a href="journals.html">Journals</a>
-    </div>
 
     <hr>
 
-    <!-- Story Header -->
-    <h2>Stories from the Field</h2>
-
-    <nav>
-      <a href="story1.html">She Was Always a Bird</a>
-      <a href="story2.html">Home Called Quietly</a>
-      <a href="story3.html">One More Song on a Silver Sea</a>
-      <a href="story4.html">Interruption in Soft Echo</a>
-      <a href="field-notes.html">From a Bottle on the Silver Sea</a>
-      <a href="story5.html">The Garden of the Threshold</a>
-      <a href="story6.html">The Lumeres Ignite</a>
-      <a href="story7.html">Her Own Blue Room</a>
-    </nav>
+    <div class="portal-links">
+      <a href="dispatches.html">Dispatches</a>
+      <a href="journals.html">Journals</a>
+      <a href="stories.html">Stories</a>
+      <a href="field-maps.html">Field Maps</a>
+    </div>
 
     <hr>
 
