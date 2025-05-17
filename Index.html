@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slipstream Gateway — Enter the Field</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Color Palette and Font */
+        :root {
+            --deep-field: #0f0f0f;
+            --dim-starlight: #eaeaea;
+            --soft-cyan-pulse: #7fffd4;
+            --signal-violet: #a593e0;
+            --echo-gray: #5c5c5c;
+        }
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 4rem 1rem;
+            font-family: 'Sora', sans-serif;
+            background: radial-gradient(circle at 50% 50%, #0f0f0f 0%, #050505 100%);
+            color: var(--dim-starlight);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            animation: pulse 6s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.02); }
+        }
+
+        /* Gateway Title */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: var(--soft-cyan-pulse);
+            margin-bottom: 0.5rem;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px rgba(127, 255, 212, 0.2); }
+            100% { text-shadow: 0 0 20px rgba(127, 255, 212, 0.6); }
+        }
+
+        /* Whisper Pathways */
+        .pathways {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .pathways a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--signal-violet);
+            text-decoration: none;
+            background: rgba(15, 15, 15, 0.4);
+            padding: 1.2rem;
+            border-radius: 6px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .pathways a:hover {
+            background: rgba(127, 255, 212, 0.15);
+            color: var(--soft-cyan-pulse);
+            transform: translateY(-2px);
+            text-shadow: 0 0 8px rgba(127, 255, 212, 0.2);
+        }
+
+        /* Whisper Effect */
+        .whisper {
+            font-size: 1.2rem;
+            color: var(--echo-gray);
+            margin-top: 3rem;
+            font-style: italic;
+            opacity: 0;
+            animation: whisperFade 8s infinite alternate;
+        }
+
+        @keyframes whisperFade {
+            0% { opacity: 0.2; }
+            50% { opacity: 0.8; }
+            100% { opacity: 0.2; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Slipstream Gateway</h1>
+        <p class="whisper">The threshold is real. The Field is awake. And you are already inside it.</p>
+
+        <div class="pathways">
+            <a href="dispatches.html">Discover Dispatches</a>
+            <a href="journals.html">Explore the Journals</a>
+            <a href="stories.html">Enter the Story Index</a>
+            <a href="field-maps.html">Reveal the Field Maps</a>
+        </div>
+
+        <p class="whisper">Keep walking. The Field opens with each step.</p>
+    </div>
+</body>
+</html>
