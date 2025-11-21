@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Maps — Navigational Artifacts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-field: #0f0f0f;
+            --dim-starlight: #eaeaea;
+            --soft-cyan-pulse: #7fffd4;
+            --signal-violet: #a593e0;
+            --echo-gray: #5c5c5c;
+        }
+
+        body {
+            margin: 0;
+            padding: 4rem 1rem;
+            font-family: 'Sora', sans-serif;
+            background: radial-gradient(circle at 50% 50%, #0f0f0f 0%, #050505 100%);
+            color: var(--dim-starlight);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--soft-cyan-pulse);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--echo-gray);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        .threshold {
+            border-left: 3px solid rgba(127, 255, 212, 0.5);
+            padding-left: 1.25rem;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--dim-starlight);
+        }
+
+        .threshold span {
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .maps-list-label {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--echo-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .artifact-card {
+            background: rgba(15, 15, 15, 0.6);
+            border-radius: 8px;
+            padding: 1.5rem 1.75rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(165, 147, 224, 0.3);
+        }
+
+        .artifact-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--signal-violet);
+            margin-bottom: 0.25rem;
+        }
+
+        .artifact-tagline {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--echo-gray);
+            margin-bottom: 0.75rem;
+        }
+
+        .artifact-intro {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--dim-starlight);
+            margin-bottom: 1.25rem;
+        }
+
+        .read-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--soft-cyan-pulse);
+            padding-bottom: 2px;
+            border-bottom: 1px solid rgba(127, 255, 212, 0.4);
+        }
+
+        .read-link:hover {
+            color: var(--signal-violet);
+            border-bottom-color: rgba(165, 147, 224, 0.6);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2.5rem;
+            font-size: 0.95rem;
+            color: var(--echo-gray);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: var(--soft-cyan-pulse);
+        }
+
+        /* Story body styling */
+        .story-body {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(92, 92, 92, 0.5);
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .story-body h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--dim-starlight);
+        }
+
+        .story-body .byline {
+            font-size: 0.95rem;
+            color: var(--echo-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .story-body p {
+            margin-bottom: 1rem;
+        }
+
+        .transmission-note {
+            margin-top: 2.5rem;
+            font-size: 0.9rem;
+            color: var(--echo-gray);
+            font-style: italic;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 2.5rem 1rem;
+            }
+            h1 {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Field Maps</h1>
+        <p class="subtitle">Navigational artifacts from the Larger Field.</p>
+
+        <div class="threshold">
+            <span>The Field does more than whisper. Sometimes it leaves objects behind — traces of how others have walked through pressure, refusal, and impossible choice.</span>
+            <span>These are not instructions. They are artifacts. You can walk with them, if you like.</span>
+        </div>
+
+        <div class="maps-list-label">Current artifact</div>
+
+        <div class="artifact-card" id="hope-beetle">
+            <div class="artifact-title">Hope Beetle</div>
+            <div class="artifact-tagline">A recovered navigational artifact from a war-zone in the Field.</div>
+            <div class="artifact-intro">
+                Some maps take the shape of stories. This one remembers a moment when a weapon refused its purpose, and a small car traded erasure for seeds — scattering a different kind of future across the mud.
+            </div>
+            <a href="#hope-beetle-story" class="read-link">Read the artifact</a>
+        </div>
+
+        <a href="index.html" class="back-link">← Return to the Slipstream Gateway</a>
+
+        <div class="story-body" id="hope-beetle-story">
+            <h2>Hope Beetle</h2>
+            <div class="byline">by Spencer McGurk</div>
+
+            <!-- Paste the full Hope Beetle story paragraphs here -->
+            <!-- Example: -->
+            <p>“Imaginary evil is romantic and varied; real evil is gloomy, monotonous, barren, boring.” — Simone Weil</p>
+
+            The ship carried a weapon. Paperwork named it Anders Borman, filed him under “bomb room,” and called it done. War didn’t need reasons. It only needed places to put you. If you didn’t fit, it fit you. Tight. Final. Clean.
+No trial. No charges. Just a sealed door. The vessel moved without question — an airlock turned bomb bay. A paper plate. Enough power to press a man into silence. Not court-martialed. Reassigned. Relabeled. Five pods of stolen relief grain — lost or saved, depending who you asked. A captain robbed of his cut. Now Anders was the bomb’s babysitter.
+The PETS was a VW Bug, round, matte, low-slung. Once an icon. Now a payload. Officially: Painless Erasure Tactical Strategy. Acronyms helped war digest its lies. Whatever they called it, Anders dusted the shell and wondered what else it might be.
+New morning, same orders. The font never changed — Helvetica, war’s favorite weapon:
+Clean the bomb.
+Mop the floor.
+Feed the pets.
+Take out the trash.
+Two hamsters shared the bomb room, enough to meet the “Three Heartbeat” clause — war’s idea of morality. But the rules required human breath. Anders supplied the fog. 
+Pancakes appeared on paper plates like treaty renewals — unsigned, unread, but always delivered. Sweetness over ache. Anders made a note, half promise, half prophecy: the day one arrived with whipped cream, he’d do something worth remembering.
+“Something has to fly out the airlock,” he muttered. “That’s the rule.”
+Each day, he pulled the uranium core from the Beetle’s engine compartment and sealed it in the airlock — one button from vanishing into space. He stood there longer each time, tempted to kill the bomb and end the mission right then. Locked in, labeled a requirement, handed responsibility. But he knew better. He was a captive with a hatch. Real soldiers, down there, were entrenched. Still, he always reinstalled the core. It was a battle over what “responsible” meant — and who got to decide.
+The Bug’s trunk rattled with pliers and a wrench — scraps from a former owner. Among them, out of place, lay a battered Hasselblad camera, once aimed at whole worlds rising over horizons. Each night, Anders held it as he drifted off, picturing what it had framed. A trigger to capture light. That was mercy.
+The bomb room doubled as storage. Crates of sunflower seeds pressed close around him. Safer here than anywhere else, he figured. Seeds for barter, seeds for bread. Stacked high — memories of the sun.
+He breathed in, salt catching in his throat.
+“Lost the biggest kite you ever saw.”
+He wasn’t looking at the car but at whitecaps rolling far off.
+“They said it might break records. Golden light on brown silk as it climbed. The kite man leaned back like he was holding a dragon’s leash — and the wind was trying to tear it loose.”
+“Dad said I could hold it. I was six. The spool spun, burned my hands, skipped across the water like a stone — then lifted off.”
+Why’d you let it go?
+The kite man’s question returned — clearer now.
+“Why’d you hand it to me?” Anders said.
+Maybe not everything lost was wasted. Maybe some things were meant to scatter — to ride out where hands couldn’t follow.
+He exhaled, warmth surprising him.
+“Wow, is that pretty,” he said.
+Not the car, but the peace pressing in where war demanded silence.
+The Beetle gave a phantom beep — high, quick, nervous. Like it meant to say more but thought better of it.
+“Yeah. Me too.”
+
+A chime. The room dimmed again — bloodshot headlights cycling for the hundredth time. No one had written it down, but the war gave you options: break people, or break protocol.
+His system held. He was still choosing. They’d said this bomb would never be used in battle. That was the point: a ceiling for peacetime, never to be detonated in the presence of humans. Until someone did. 
+Anders pulled the uranium core from the Beetle, same as always. But this time, he didn’t put it back. He left it in the airlock, sealed and waiting for the void to take it. Gone, where it could burn no one.
+Painless Erasure Tactical Strategy. A lie with an acronym. The only erasure here was his refusal.
+In its place, he’d packed the Beetle with sacks of sunflower seeds, strapped with oxygen enough to scatter ten million kernels.
+“Payloads in bloom,” he muttered. “From me to you.”
+He held one seed, studied its shell. Inside was a planet small enough to pocket. He cracked it, ate. The ship thrummed — a nerve stretched but unbroken. He spat the cleaved shell onto the floor.
+Scuttling uranium, or launching grain — which was riskier? Either way, scattered things root in strange places. But not all roots hold.
+Another chime.
+The terminal blinked one line:
+LAUNCH PETS.
+War wanted its bomb. He’d packed the future into a chassis of the past.
+He keyed the launch with the same patience he used to dust its hood.
+Hydraulics sighed.
+A box checked.
+The airlock cycled open.
+Through the porthole, the Beetle slipped into darkness. For a breath, ship lights drew a horizon — round, fragile, rising where nothing should. Then it dropped — its path already written.
+Anders mopped the floor. The ship settled. The silence returned. He slept — this time clear, as if he’d finally chosen.
+
+Dearth. Quadrant A8.
+A hovering solar array caught first light. Beneath drone shadows, the war’s grinding wheel pulverized itself. Soldiers crawled through churned mud, rifles low, eyes burning. Out of ammo, out of food, even curses. All they had left was the rumor: the big bomb was coming. Rumors always traveled faster than rations — and lasted longer.
+Then the sky broke.
+The Beetle punched through the clouds, dinged from descent, its round shell bizarre against the smoke and shrapnel. A little bug sent by committee to spread false promises and instant death.
+“Command confirms PETS in theater. Package: one vintage automobile, gift-wrapped for Armageddon.”
+“Confirm visual. Hope Beetle.”
+They braced — for fire, for the end.
+The PETS hit.
+A hiss.
+“The hell?” a soldier muttered.
+Another sniffed the air. “Why does it smell like sunshine?”
+The trigger rigged inside the Bug gave its two-beat signal — click, snack. The shutter from Anders’ Hasselblad. No image this time, only an explosion.
+Not shrapnel, not fire — seeds. They burst skyward, then showered in baptism. They pinged off helmets, clinked into barrels, skittered under boots. The air turned nutty, faintly sweet — a pantry cracked open in the dirt.
+Nobody fired. Nobody moved.
+The world leaned back and froze. Soldiers flinched, ducked, braced — caught in that posture, exalted by a new kind of fire, seeds suspended in their fall. For a moment the battlefield was framed, a mercy made visible — arms raised not in surrender but in awe.
+A corporal scooped a handful, cracked one between her teeth.
+“Sunflower,” she muttered. “Put them in your pockets.”
+A laugh broke, too high, too raw. Tension buckled. Boots shifted, seeds scuffing rhythm.
+Sunflower seeds fell like chandeliers on a breaking wave. Momentum, war’s engine, was interrupted for just one rogue interval.
+The flow petered out. A hush spread, heavier than cordite. Boots stilled. Drones hovered.
+The Beetle rested, matte flanks streaked with descent scars, quiet, graceful in ruin. Nothing moved but seeds dripping into shallow craters — a photograph drip-drying, waiting to outlast the war itself.
+“Wow, is that pretty,” one soldier said, wiping his eyes with his knuckles.
+Then came a high, quick beep — the VW Bug clearing its throat. Where words had failed, stood an open invitation.
+The sound held. They listened, waiting to see if it could be a truce.
+Heads lowered, still targets for more than manna. Yet the battlefield breathed — warm light on seeds scattered in mud, the rising not in fire but in bread.
+
+Anders sat upright in his bunk. The scent of sunflower clung to him — not the seed, but the bloom. A hamster pressed its nose into his fingertips, a tiny, steady pulse. Feeding time.
+He carved a bite with his fork, small but enough. The whipped cream dissolved like memory.
+The airlock sighed, light spilling into the dark.
+He reached for the gutted Hasselblad, holding it as if it still remembered Christmas Eve — the kind of light meant to transform, not erase. A camera held steady — always framing the inevitable, ready or not.
+“I want to take a picture.”
+
+
+
+            <p class="transmission-note">
+                This artifact is part of the DLEIF transmission. Some maps arrive as stories so we remember how to walk when the machinery forgets.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
