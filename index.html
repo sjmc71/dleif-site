@@ -79,17 +79,50 @@
             margin-top: 2rem;
         }
 
-        .pathways a {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--signal-violet);
-            text-decoration: none;
-            background: rgba(15, 15, 15, 0.4);
-            padding: 1.2rem;
-            border-radius: 6px;
-            transition: background 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
+/* Pathway Buttons */
+.pathways a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--signal-violet);
+    text-decoration: none;
+    background: rgba(15, 15, 15, 0.4);
+    padding: 1.2rem;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover State */
+.pathways a:hover {
+    background: rgba(127, 255, 212, 0.15);
+    color: var(--soft-cyan-pulse);
+    transform: translateY(-2px);
+    text-shadow: 0 0 8px rgba(127, 255, 212, 0.2);
+}
+
+/* Special motion + glow for the Field Maps button */
+.maps-link {
+    position: relative;
+    animation: mapFloat 8s ease-in-out infinite;
+    box-shadow: 0 0 12px rgba(165, 147, 224, 0.3);
+}
+
+/* Floating glow animation */
+@keyframes mapFloat {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 0 6px rgba(165, 147, 224, 0.2);
+    }
+    50% {
+        transform: translateY(-3px);
+        box-shadow: 0 0 14px rgba(127, 255, 212, 0.35);
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 0 6px rgba(165, 147, 224, 0.2);
+    }
+}
+
 
         .pathways a:hover {
             background: rgba(127, 255, 212, 0.15);
@@ -124,7 +157,8 @@
             <a href="dispatches.html">Discover Dispatches</a>
             <a href="journals.html">Explore the Journals</a>
             <a href="stories.html">Enter the Story Index</a>
-            <a href="field-maps.html">Reveal the Field Maps</a>
+            <a href="field-maps.html" class="maps-link">Reveal the Field Maps</a>
+
         </div>
 
         <p class="whisper">Keep walking. The Field opens with each step.</p>
