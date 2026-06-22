@@ -46,30 +46,31 @@ blockquote {
   margin-top: 3rem;
   text-align: center;
 }
+
 .support-note {
-margin-top: 2rem;
-text-align: center;
-font-size: 0.95rem;
-color: var(–echo-gray);
-line-height: 1.7;
-padding: 1rem 0;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--echo-gray);
+  line-height: 1.7;
+  padding: 1rem 0;
 }
 
 .support-note a {
-color: var(–soft-cyan-pulse);
-text-decoration: none;
-font-weight: 600;
-transition: color 0.2s ease;
+  color: var(--soft-cyan-pulse);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
 }
 
 .support-note a:hover {
-color: var(–signal-violet);
-text-decoration: none;
+  color: var(--signal-violet);
+  text-decoration: none;
 }
 
 .support-note a:focus {
-outline: 2px dotted var(–soft-cyan-pulse);
-outline-offset: 2px;
+  outline: 2px dotted var(--soft-cyan-pulse);
+  outline-offset: 2px;
 }
 
 hr {
